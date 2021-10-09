@@ -25,6 +25,8 @@ for num in range(1, user_letters + 1):
 for num1 in range(1, user_symbols + 1):
     selected_symbols = random.choice(symbols)
     password += selected_symbols
+
+# Loop through the numbers and randomly select number of numbers the user needs(user_numbers)
 for num3 in range(1, user_numbers + 1):
     selected_numbers = random.choice(numbers)
     password += selected_numbers
