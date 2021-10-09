@@ -13,8 +13,8 @@ user_numbers = int(input(f"How many numbers would you like?\n"))
 
 # generate letters to the number the user wants to add
 
-# Set initial password value to an empty string
-password = ""
+# Set initial password value to an empty list
+password = []
 
 # Loop through the letters and randomly select number of letters the user needs(user_letters)
 for num in range(1, user_letters + 1):
@@ -33,6 +33,11 @@ for num3 in range(1, user_numbers + 1):
 
 print(password)
 
-# generate symbols to the number the user wants to add
-# generate numbers to the number the user wants to add
-# shuffle result
+# Shuffle the generated password to get the final password
+random.shuffle(password)
+final_password = ''.join(password)
+
+# final_password = ""
+# for word in password:
+#     final_password += word
+print(f"The password generated for you is {final_password}")
