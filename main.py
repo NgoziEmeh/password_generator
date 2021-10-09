@@ -35,7 +35,12 @@ print(password)
 
 # Shuffle the generated password to get the final password
 random.shuffle(password)
+
+# Convert to a string
+# You can use the join method
 final_password = ''.join(password)
+
+# or use for loop to convert
 
 # final_password = ""
 # for word in password:
