@@ -19,6 +19,8 @@ for num in range(1, user_letters + 1):
 for num1 in range(1, user_symbols + 1):
     selected_symbols = random.choice(symbols)
     password += selected_symbols
+for num3 in range(1, user_numbers + 1):
+    selected_numbers = random.choice(numbers)
 print(password)
 
 # generate symbols to the number the user wants to add
