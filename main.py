@@ -20,6 +20,8 @@ password = ""
 for num in range(1, user_letters + 1):
     selected_letters = random.choice(letters)
     password += selected_letters
+
+# Loop through the symbols and randomly select number of symbols the user needs(user_symbols)
 for num1 in range(1, user_symbols + 1):
     selected_symbols = random.choice(symbols)
     password += selected_symbols
